@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
-import { api } from '../services/api';
-import type { Pessoa, Transacao } from '../types';
+import { pessoaService } from '../services/pessoaService';
+import { transacaoService } from '../services/transacaoService';
+import type { Pessoa } from '../types/Pessoa';
+import type { Transacao } from '../types/Transacao';
 
 export function TransacoesPage() {
   const [descricao, setDescricao] = useState('');
@@ -15,7 +17,7 @@ export function TransacoesPage() {
 
   const carregar = async () => {
     try {
-      const [pessoasDados, transacoesDados] = await Promise.all([api.getPessoas(), api.getTransacoes()]);
+      const [pessoasDados, transacoesDados] = await Promise.all([pessoaService.listar(), transacaoService.listar()]);
       setPessoas(pessoasDados);
       setTransacoes(transacoesDados);
     } catch (error) {
@@ -32,7 +34,7 @@ export function TransacoesPage() {
     setErro('');
 
     try {
-      await api.createTransacao({
+      await transacaoService.criar({
         descricao,
         valor: Number(valor),
         tipo: Number(tipo),

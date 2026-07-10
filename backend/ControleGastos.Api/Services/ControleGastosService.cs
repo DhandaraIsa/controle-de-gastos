@@ -128,22 +128,22 @@ public class ControleGastosService
     {
         var pessoas = await _context.Pessoas
             .AsNoTracking()
-            .Select(p => new
-            {
-                p.Id,
-                p.Nome,
-                TotalReceitas = p.Transacoes.Where(t => t.Tipo == TipoTransacao.Receita).Sum(t => (decimal?)t.Valor) ?? 0m,
-                TotalDespesas = p.Transacoes.Where(t => t.Tipo == TipoTransacao.Despesa).Sum(t => (decimal?)t.Valor) ?? 0m
-            })
+            .Include(p => p.Transacoes)
             .ToListAsync();
 
-        var resumo = pessoas.Select(p => new PessoaResumoTotaisDto
+        var resumo = pessoas.Select(p =>
         {
-            PessoaId = p.Id,
-            Nome = p.Nome,
-            TotalReceitas = p.TotalReceitas,
-            TotalDespesas = p.TotalDespesas,
-            Saldo = p.TotalReceitas - p.TotalDespesas
+            var totalReceitas = p.Transacoes.Where(t => t.Tipo == TipoTransacao.Receita).Sum(t => t.Valor);
+            var totalDespesas = p.Transacoes.Where(t => t.Tipo == TipoTransacao.Despesa).Sum(t => t.Valor);
+
+            return new PessoaResumoTotaisDto
+            {
+                PessoaId = p.Id,
+                Nome = p.Nome,
+                TotalReceitas = totalReceitas,
+                TotalDespesas = totalDespesas,
+                Saldo = totalReceitas - totalDespesas
+            };
         }).ToList();
 
         return new ConsultaTotaisResponseDto

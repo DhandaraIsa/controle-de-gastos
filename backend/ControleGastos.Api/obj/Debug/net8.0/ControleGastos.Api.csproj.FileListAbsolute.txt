@@ -1,10 +1,3 @@
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.csproj.AssemblyReference.cache
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.AssemblyInfoInputs.cache
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.AssemblyInfo.cs
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.csproj.CoreCompileInputs.cache
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\appsettings.json
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\ControleGastos.Api.exe
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\ControleGastos.Api.deps.json
@@ -150,6 +143,14 @@ C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\De
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.AssemblyInfo.cs
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\ControleGastos.Api.sourcelink.json
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Documents\Dev\controle-de-gastos\backend\ControleGastos.Api\obj\Debug\net8.0\staticwebassets\msbuild.ControleGastos.Api.Microsoft.AspNetCore.StaticWebAssets.props

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { api } from '../services/api';
-import type { Pessoa } from '../types';
+import { pessoaService } from '../services/pessoaService';
+import type { Pessoa } from '../types/Pessoa';
 
 export function PessoasPage() {
   const [nome, setNome] = useState('');
@@ -10,7 +10,7 @@ export function PessoasPage() {
 
   const carregar = async () => {
     try {
-      const dados = await api.getPessoas();
+      const dados = await pessoaService.listar();
       setPessoas(dados);
     } catch (error) {
       console.error(error);
@@ -26,7 +26,7 @@ export function PessoasPage() {
     setErro('');
 
     try {
-      await api.createPessoa({ nome, idade: Number(idade) });
+      await pessoaService.criar({ nome, idade: Number(idade) });
       setNome('');
       setIdade('');
       await carregar();
@@ -40,7 +40,7 @@ export function PessoasPage() {
     if (!confirmar) return;
 
     try {
-      await api.deletePessoa(id);
+      await pessoaService.remover(id);
       await carregar();
     } catch (error: any) {
       alert(error.message || 'Erro ao excluir pessoa');

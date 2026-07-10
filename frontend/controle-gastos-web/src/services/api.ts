@@ -35,3 +35,5 @@ export const api = {
   }),
   getTotais: () => request<any>('/totais')
 };
+
+export default request;
